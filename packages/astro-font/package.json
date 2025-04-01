@@ -50,6 +50,7 @@
   },
   "scripts": {
     "build": "rimraf dist && tsup && tsx patch-fontkit.ts",
-    "fmt": "prettier --write '**/*' --ignore-unknown"
+    "fmt": "prettier --write '**/*' --ignore-unknown",
+    "prepare": "pnpm run build"
   }
 }
